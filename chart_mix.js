@@ -4,11 +4,13 @@ var options_mix = {
         name: 'A',
         type: 'bar',
         data: [800000, 600000, 1000000, 850000, 650000]
-    }, {
-        name: 'B',
-        type: 'bar',
-        data: [800000, 600000, 1000000, 850000, 650000]
-    }, {
+    },
+    //  {
+    //     name: 'B',
+    //     type: 'bar',
+    //     data: [800000, 600000, 1000000, 850000, 650000]
+    // },
+    {
         name: 'C',
         type: 'line',
         data: [630000, 220000, 800000, 750000, 580000]
@@ -50,11 +52,11 @@ var options_mix = {
             },
             axisBorder: {
                 show: true,
-                color: '#ffee00'
+                color: '#ddb96b'
             },
             labels: {
                 style: {
-                    colors: '#ffee00',
+                    colors: '#ddb96b',
                     fontSize: '14px',
                 }
             },
@@ -68,29 +70,29 @@ var options_mix = {
                 enabled: true
             }
         },
-        {
-            seriesName: 'Income',
-            opposite: false,
-            axisTicks: {
-                show: true,
-            },
-            axisBorder: {
-                show: true,
-                color: '#ffb30f'
-            },
-            labels: {
-                style: {
-                    colors: '#ffb30f',
-                    fontSize: '14px',
-                }
-            },
-            // title: {
-            //     text: "Operating Cashflow (thousand crores)",
-            //     style: {
-            //         color: '#ffd884',
-            //     }
-            // },
-        },
+        // {
+        //     seriesName: 'Income',
+        //     opposite: false,
+        //     axisTicks: {
+        //         show: true,
+        //     },
+        //     axisBorder: {
+        //         show: true,
+        //         color: '#ffb30f'
+        //     },
+        //     labels: {
+        //         style: {
+        //             colors: '#ffb30f',
+        //             fontSize: '14px',
+        //         }
+        //     },
+        //     // title: {
+        //     //     text: "Operating Cashflow (thousand crores)",
+        //     //     style: {
+        //     //         color: '#ffd884',
+        //     //     }
+        //     // },
+        // },
         {
             seriesName: 'Revenue',
             opposite: true,
@@ -150,7 +152,8 @@ var options_mix = {
         horizontalAlign: 'left',
         offsetX: 40
     },
-    colors: ['#fff34e', '#ffcc5d', '#4cdb70', '#ff6767']
+    // colors: ['#fff34e', '#ffcc5d', '#4cdb70', '#ff6767']
+    colors: ['#ddb96b', '#4cdb70', '#ff6767']
 };
 
 var chart_mix = new ApexCharts(document.querySelector("#chart_mix"), options_mix);
