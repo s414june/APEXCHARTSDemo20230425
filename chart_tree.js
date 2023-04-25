@@ -42,18 +42,21 @@ var options_tree = {
         }
     ],
     legend: {
-        show: false
+        show: true
     },
     chart: {
         height: 350,
-        width: 800,
+        width: 500,
         type: 'treemap',
     },
     dataLabels: {
         // enabled: false
         style: {
             colors: ['#414141']
-        }
+        },
+        formatter: function (val, opt) {
+            return val + ":" + opt.value
+        },
     },
     title: {
         text: 'Treemap',
